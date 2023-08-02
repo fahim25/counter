@@ -133,3 +133,43 @@ if (isDisabled && clickCounter === 2) {
 } else {
   startCountdown();
 }
+
+// const countdownButton = document.getElementById("countdownButton");
+// let countdown = localStorage.getItem("countdown") || 30;
+// let isDisabled = JSON.parse(localStorage.getItem("isDisabled")) || true;
+// let clickCount = JSON.parse(sessionStorage.getItem("clickCount")) || 0; // Using sessionStorage
+
+// function startCountdown() {
+//   if (countdown > 0) {
+//     countdownButton.innerText = `Wait (${countdown}s)`;
+//     countdown--;
+//     setTimeout(startCountdown, 1000);
+//   } else {
+//     countdownButton.innerText = "Click Me";
+//     countdownButton.removeAttribute("disabled");
+//     isDisabled = false;
+//     localStorage.setItem("isDisabled", JSON.stringify(isDisabled));
+//   }
+// }
+
+// function handleButtonClick() {
+//   if (!isDisabled) {
+//     countdownButton.setAttribute("disabled", "true");
+//     isDisabled = true;
+//     clickCount++;
+//     sessionStorage.setItem("clickCount", JSON.stringify(clickCount)); // Using sessionStorage
+//     localStorage.setItem("isDisabled", JSON.stringify(isDisabled));
+//   }
+// }
+
+// // Save countdown value in localStorage every second
+// setInterval(() => {
+//   localStorage.setItem("countdown", countdown);
+// }, 1000);
+
+// // Initialize button state based on isDisabled
+// if (isDisabled) {
+//   countdownButton.setAttribute("disabled", "true");
+// }
+
+// startCountdown();
